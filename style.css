@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 800vh;
+}
+.menu-lateral {
+    width: 70px;
+    height: 100%;
+    background: #a8bbd9;
+    padding: 30px 0px 0px 0.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    overflow: hidden;
+}
+.btn-expandir {
+    width: 100%;
+    padding-left: 15px;
+}
+.btn-expandir > i {
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 800;
+}
+ul {
+    height: 100%;
+}
+ul li.ativo {
+    background-color: #0062ff;
+}
+ul li.item-menu {
+    transition: all .5s;
+}
+ul li.item-menu a {
+    color: #000;
+    font-size: 1.2rem;
+    padding: 20px 4px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+    transition: all .8s;
+    opacity: 0;
+}
+ul li.item-menu a .icon > i {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+/*Efeitos*/
+ul li.item-menu:hover {
+    background: #0062ff;
+}
+.menu-lateral.expandir {
+    width: 220px;
+}
+.menu-lateral.expandir .txt-link {
+    margin-left: 10px;
+    opacity: 1;
+}
